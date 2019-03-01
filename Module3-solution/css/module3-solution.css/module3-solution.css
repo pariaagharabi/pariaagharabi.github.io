@@ -31,6 +31,10 @@ nav.bg-light {
   border-bottom: .8px solid #519194;
 }
 
+.navbar-toggler {
+  margin-right: 20px;
+}
+
 /* END HEADER */
 
 /* HOME PAGE */
