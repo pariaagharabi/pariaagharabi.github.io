@@ -1,4 +1,4 @@
-﻿// 8.0.0.3382. Generated 1/14/2019 10:26:32 PM UTC
+// 8.0.0.3382. Generated 1/14/2019 10:26:32 PM UTC
 
 //***** messagecenter.js *****//
 if (typeof console == 'undefined') console = {
