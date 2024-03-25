@@ -1,0 +1,331 @@
+:is(*,*::after,*::before){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100svw;
+    height: 100%;
+    background: radial-gradient(circle at center, rgb(211, 192, 160), rgb(129, 112, 86));
+    font-family: monospace;
+}
+
+
+.main-container{
+    margin-top: 90px;
+    padding: 0 80px;
+}
+
+/* Hero section */
+#hero-section {
+  display: flex;
+}
+
+.left-section-introduction {
+  display: flex;
+  flex: 1 0 50%;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(77, 67, 51);
+}
+
+/* Typing Animation */
+#career-title:after {
+  content: "";
+  animation: typing 10s linear infinite;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  position: relative; /* Added position property */
+}
+
+@keyframes typing {
+  0% {
+    content: "W";
+  }
+  4% {
+    content: "We";
+  }
+  8% {
+    content: "Web";
+  }
+  12% {
+    content: "Web ";
+  }
+  16% {
+    content: "Web D";
+  }
+  20% {
+    content: "Web De";
+  }
+  24% {
+    content: "Web Dev";
+  }
+  28% {
+    content: "Web Deve";
+  }
+  32% {
+    content: "Web Devel";
+  }
+  36% {
+    content: "Web Develo";
+  }
+  40% {
+    content: "Web Develop";
+  }
+  44% {
+    content: "Web Develope";
+  }
+  48% {
+    content: "Web Developer";
+  }
+  52% {
+    content: "Web Developer ";
+  }
+  56% {
+    content: "Web Developer a";
+  }
+  60% {
+    content: "Web Developer an";
+  }
+  64% {
+    content: "Web Developer and";
+  }
+  68% {
+    content: "Web Developer and ";
+  }
+  70% {
+    content: "Web Developer and U";
+  }
+  72% {
+    content: "Web Developer and UX";
+  }
+  74% {
+    content: "Web Developer and UX ";
+  }
+  80% {
+    content: "Web Developer and UX D";
+  }
+  83% {
+    content: "Web Developer and UX De";
+  }
+  86% {
+    content: "Web Developer and UX Des";
+  }
+  88% {
+    content: "Web Developer and UX Desi";
+  }
+  90% {
+    content: "Web Developer and UX Desig";
+  }
+  92% {
+    content: "Web Developer and UX Design";
+  }
+  94% {
+    content: "Web Developer and UX Designe";
+  }
+  96% {
+    content: "Web Developer and UX Designer";
+  }
+  100% {
+    content: "Web Developer and UX Designer.";
+  }
+}
+
+.download-cv-btn {
+  margin-top: 50px;
+}
+
+.download-cv-btn button {
+  background-color: transparent;
+  color: rgb(77, 67, 51);
+  outline-style: outset;
+  border: 5px solid rgb(77, 68, 52);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: transform 0.5s linear, background-color 0.5s ease-in-out, 
+  outline-color 0.5s ease; 
+}
+
+.download-cv-btn button:hover {
+  background-color: rgb(68, 68, 68);
+  color: tan;
+  transform: scale(1.1);
+}
+
+/* Styling My Image */
+.right-section-image-container {
+  display: flex;
+  flex: 1 0 50%;
+  justify-content: end;
+}
+
+.image-container {
+  height: 569px;
+  width: 569px;
+  border-radius: 50%;
+  transition: all 0.4s ease-out;
+  border: 14px solid rgb(79, 69, 53);
+}
+
+.right-section-image-container .my-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .right-section-image-container {
+    display: none;
+  }
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+div.section-title {
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: rgb(102, 89, 68);
+}
+
+ /* Styling About Me Container */
+div.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 38px;
+}
+
+
+div.skills-content  {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+div.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+div.skill-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: rgb(102, 89, 68);
+}
+
+div.skill-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgb(77, 66, 50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tan-circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: rgb(129, 112, 86);
+}
+
+
+/* styling portfolio section */
+div.portfolio-content  {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+a.portfolio {
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Styling Cards Works */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px 22px;
+}
+
+.card {
+  flex: 0 0 250px;
+  border: 3px solid rgb(99, 87, 67);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card .text {
+  padding: 0 20px 20px;
+}
+
+.card button {
+  border: 3px solid tan;
+  border-radius: 10px;
+  background-color: rgb(94, 83, 67);
+  color: tan;
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* styling contact section */
+div.contact-content  {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+a.contact {
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Footer Section */
+  footer {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 40px;
+    background-color: rgb(68, 68, 68);
+    color: tan;
+  }
+  
+  .copy-right {
+    font-weight: bold;
+  }
+  
