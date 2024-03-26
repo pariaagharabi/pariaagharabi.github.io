@@ -195,7 +195,7 @@ div.section-title {
   color: rgb(102, 89, 68);
 }
 
-div.section-title h3{
+div.about-me-details{
   color: rgb(102, 89, 68);
 }
 
@@ -229,6 +229,7 @@ div.skill-title {
 
 div.skill-details{
   font-size: 1.2rem;
+  color: rgb(102, 89, 68);
 }
 
 div.skill-image-container {
@@ -281,6 +282,7 @@ a.portfolio {
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: background-color 0.2s ease-out, transform 0.2s ease-out;
+  color: rgb(77, 67, 51);
 }
 
 .card:hover {
@@ -289,12 +291,8 @@ a.portfolio {
 
 .card img {
   max-width: 100%;
-}
-
-.card .card-img {
-  /* object-fit: cover; */
-  
- 
+  height: 200px;
+  object-fit: cover;
 }
 
 .card .text {
