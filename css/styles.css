@@ -195,6 +195,10 @@ div.section-title {
   color: rgb(102, 89, 68);
 }
 
+div.section-title h3{
+  color: rgb(102, 89, 68);
+}
+
  /* Styling About Me Container */
 div.container {
   display: flex;
@@ -324,8 +328,6 @@ a.contact {
 
 /* Footer Section */
   footer {
-    /* display: flex;
-    justify-content: center; */
     text-align: center;
     position: fixed;
     left: 0;
